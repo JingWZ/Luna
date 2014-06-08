@@ -14,13 +14,13 @@
 		185C33C219449CA7002D5862 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 185C33C119449CA7002D5862 /* main.m */; };
 		185C33C619449CA7002D5862 /* CCLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 185C33C519449CA7002D5862 /* CCLAppDelegate.m */; };
 		185C33C919449CA7002D5862 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 185C33C719449CA7002D5862 /* Main.storyboard */; };
-		185C33CC19449CA7002D5862 /* CCLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 185C33CB19449CA7002D5862 /* CCLViewController.m */; };
 		185C33CE19449CA7002D5862 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 185C33CD19449CA7002D5862 /* Images.xcassets */; };
 		185C33D519449CA7002D5862 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 185C33D419449CA7002D5862 /* XCTest.framework */; };
 		185C33D619449CA7002D5862 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 185C33B519449CA7002D5862 /* Foundation.framework */; };
 		185C33D719449CA7002D5862 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 185C33B919449CA7002D5862 /* UIKit.framework */; };
 		185C33DF19449CA7002D5862 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 185C33DD19449CA7002D5862 /* InfoPlist.strings */; };
 		185C33E119449CA7002D5862 /* LunaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 185C33E019449CA7002D5862 /* LunaTests.m */; };
+		185C33FD1944B3BA002D5862 /* CCLFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 185C33FC1944B3BA002D5862 /* CCLFirstViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,14 +45,14 @@
 		185C33C419449CA7002D5862 /* CCLAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CCLAppDelegate.h; sourceTree = "<group>"; };
 		185C33C519449CA7002D5862 /* CCLAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CCLAppDelegate.m; sourceTree = "<group>"; };
 		185C33C819449CA7002D5862 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		185C33CA19449CA7002D5862 /* CCLViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CCLViewController.h; sourceTree = "<group>"; };
-		185C33CB19449CA7002D5862 /* CCLViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CCLViewController.m; sourceTree = "<group>"; };
 		185C33CD19449CA7002D5862 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		185C33D319449CA7002D5862 /* LunaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LunaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		185C33D419449CA7002D5862 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		185C33DC19449CA7002D5862 /* LunaTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LunaTests-Info.plist"; sourceTree = "<group>"; };
 		185C33DE19449CA7002D5862 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		185C33E019449CA7002D5862 /* LunaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LunaTests.m; sourceTree = "<group>"; };
+		185C33FB1944B3BA002D5862 /* CCLFirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCLFirstViewController.h; sourceTree = "<group>"; };
+		185C33FC1944B3BA002D5862 /* CCLFirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCLFirstViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,8 +115,8 @@
 				185C33C419449CA7002D5862 /* CCLAppDelegate.h */,
 				185C33C519449CA7002D5862 /* CCLAppDelegate.m */,
 				185C33C719449CA7002D5862 /* Main.storyboard */,
-				185C33CA19449CA7002D5862 /* CCLViewController.h */,
-				185C33CB19449CA7002D5862 /* CCLViewController.m */,
+				185C33FB1944B3BA002D5862 /* CCLFirstViewController.h */,
+				185C33FC1944B3BA002D5862 /* CCLFirstViewController.m */,
 				185C33CD19449CA7002D5862 /* Images.xcassets */,
 				185C33BC19449CA7002D5862 /* Supporting Files */,
 			);
@@ -250,9 +250,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				185C33FD1944B3BA002D5862 /* CCLFirstViewController.m in Sources */,
 				185C33C219449CA7002D5862 /* main.m in Sources */,
 				185C33C619449CA7002D5862 /* CCLAppDelegate.m in Sources */,
-				185C33CC19449CA7002D5862 /* CCLViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -457,6 +457,7 @@
 				185C33E619449CA7002D5862 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		185C33E719449CA7002D5862 /* Build configuration list for PBXNativeTarget "LunaTests" */ = {
 			isa = XCConfigurationList;
@@ -465,6 +466,7 @@
 				185C33E919449CA7002D5862 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

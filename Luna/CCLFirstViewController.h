@@ -1,5 +1,5 @@
 //
-//  CCLViewController.h
+//  CCLFirstViewController.h
 //  Luna
 //
 //  Created by Jing on 14-6-8.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CCLViewController : UIViewController
+@interface CCLFirstViewController : UIViewController
 
 @end
