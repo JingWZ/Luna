@@ -21,6 +21,9 @@
 		185C33DF19449CA7002D5862 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 185C33DD19449CA7002D5862 /* InfoPlist.strings */; };
 		185C33E119449CA7002D5862 /* LunaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 185C33E019449CA7002D5862 /* LunaTests.m */; };
 		185C33FD1944B3BA002D5862 /* CCLFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 185C33FC1944B3BA002D5862 /* CCLFirstViewController.m */; };
+		185C340C1944B91A002D5862 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 185C340B1944B91A002D5862 /* CFNetwork.framework */; };
+		185C341B1944BA30002D5862 /* libObjectiveFlickr.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 185C34181944BA19002D5862 /* libObjectiveFlickr.a */; };
+		185C341E1944BA96002D5862 /* CCLSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 185C341D1944BA96002D5862 /* CCLSecondViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,6 +33,27 @@
 			proxyType = 1;
 			remoteGlobalIDString = 185C33B119449CA7002D5862;
 			remoteInfo = Luna;
+		};
+		185C34151944BA19002D5862 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 185C340F1944BA19002D5862 /* ObjectiveFlickr.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6A8666490F9593B200325E1C;
+			remoteInfo = "ObjectiveFlickr (framework)";
+		};
+		185C34171944BA19002D5862 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 185C340F1944BA19002D5862 /* ObjectiveFlickr.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6ABF72E60F939BE600B9179E;
+			remoteInfo = "ObjectiveFlickr (library)";
+		};
+		185C34191944BA2C002D5862 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 185C340F1944BA19002D5862 /* ObjectiveFlickr.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 6ABF72E50F939BE600B9179E;
+			remoteInfo = "ObjectiveFlickr (library)";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -53,6 +77,11 @@
 		185C33E019449CA7002D5862 /* LunaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LunaTests.m; sourceTree = "<group>"; };
 		185C33FB1944B3BA002D5862 /* CCLFirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCLFirstViewController.h; sourceTree = "<group>"; };
 		185C33FC1944B3BA002D5862 /* CCLFirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCLFirstViewController.m; sourceTree = "<group>"; };
+		185C340B1944B91A002D5862 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		185C340F1944BA19002D5862 /* ObjectiveFlickr.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ObjectiveFlickr.xcodeproj; path = "objectiveflickr-master/ObjectiveFlickr.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		185C341C1944BA96002D5862 /* CCLSecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCLSecondViewController.h; sourceTree = "<group>"; };
+		185C341D1944BA96002D5862 /* CCLSecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCLSecondViewController.m; sourceTree = "<group>"; };
+		185C34201944BE63002D5862 /* CCLDefinition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCLDefinition.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +89,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				185C341B1944BA30002D5862 /* libObjectiveFlickr.a in Frameworks */,
+				185C340C1944B91A002D5862 /* CFNetwork.framework in Frameworks */,
 				185C33B819449CA7002D5862 /* CoreGraphics.framework in Frameworks */,
 				185C33BA19449CA7002D5862 /* UIKit.framework in Frameworks */,
 				185C33B619449CA7002D5862 /* Foundation.framework in Frameworks */,
@@ -101,6 +132,7 @@
 		185C33B419449CA7002D5862 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				185C340B1944B91A002D5862 /* CFNetwork.framework */,
 				185C33B519449CA7002D5862 /* Foundation.framework */,
 				185C33B719449CA7002D5862 /* CoreGraphics.framework */,
 				185C33B919449CA7002D5862 /* UIKit.framework */,
@@ -112,11 +144,13 @@
 		185C33BB19449CA7002D5862 /* Luna */ = {
 			isa = PBXGroup;
 			children = (
-				185C33C419449CA7002D5862 /* CCLAppDelegate.h */,
-				185C33C519449CA7002D5862 /* CCLAppDelegate.m */,
 				185C33C719449CA7002D5862 /* Main.storyboard */,
+				185C34201944BE63002D5862 /* CCLDefinition.h */,
 				185C33FB1944B3BA002D5862 /* CCLFirstViewController.h */,
 				185C33FC1944B3BA002D5862 /* CCLFirstViewController.m */,
+				185C341C1944BA96002D5862 /* CCLSecondViewController.h */,
+				185C341D1944BA96002D5862 /* CCLSecondViewController.m */,
+				185C340E1944B9FA002D5862 /* Flickr */,
 				185C33CD19449CA7002D5862 /* Images.xcassets */,
 				185C33BC19449CA7002D5862 /* Supporting Files */,
 			);
@@ -126,6 +160,8 @@
 		185C33BC19449CA7002D5862 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				185C33C419449CA7002D5862 /* CCLAppDelegate.h */,
+				185C33C519449CA7002D5862 /* CCLAppDelegate.m */,
 				185C33BD19449CA7002D5862 /* Luna-Info.plist */,
 				185C33BE19449CA7002D5862 /* InfoPlist.strings */,
 				185C33C119449CA7002D5862 /* main.m */,
@@ -152,6 +188,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		185C340E1944B9FA002D5862 /* Flickr */ = {
+			isa = PBXGroup;
+			children = (
+				185C340F1944BA19002D5862 /* ObjectiveFlickr.xcodeproj */,
+			);
+			name = Flickr;
+			sourceTree = "<group>";
+		};
+		185C34101944BA19002D5862 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				185C34161944BA19002D5862 /* ObjectiveFlickr.framework */,
+				185C34181944BA19002D5862 /* libObjectiveFlickr.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -166,6 +219,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				185C341A1944BA2C002D5862 /* PBXTargetDependency */,
 			);
 			name = Luna;
 			productName = Luna;
@@ -216,6 +270,12 @@
 			mainGroup = 185C33A919449CA7002D5862;
 			productRefGroup = 185C33B319449CA7002D5862 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 185C34101944BA19002D5862 /* Products */;
+					ProjectRef = 185C340F1944BA19002D5862 /* ObjectiveFlickr.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				185C33B119449CA7002D5862 /* Luna */,
@@ -223,6 +283,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		185C34161944BA19002D5862 /* ObjectiveFlickr.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ObjectiveFlickr.framework;
+			remoteRef = 185C34151944BA19002D5862 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		185C34181944BA19002D5862 /* libObjectiveFlickr.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libObjectiveFlickr.a;
+			remoteRef = 185C34171944BA19002D5862 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		185C33B019449CA7002D5862 /* Resources */ = {
@@ -251,6 +328,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				185C33FD1944B3BA002D5862 /* CCLFirstViewController.m in Sources */,
+				185C341E1944BA96002D5862 /* CCLSecondViewController.m in Sources */,
 				185C33C219449CA7002D5862 /* main.m in Sources */,
 				185C33C619449CA7002D5862 /* CCLAppDelegate.m in Sources */,
 			);
@@ -271,6 +349,11 @@
 			isa = PBXTargetDependency;
 			target = 185C33B119449CA7002D5862 /* Luna */;
 			targetProxy = 185C33D819449CA7002D5862 /* PBXContainerItemProxy */;
+		};
+		185C341A1944BA2C002D5862 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "ObjectiveFlickr (library)";
+			targetProxy = 185C34191944BA2C002D5862 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -379,6 +462,12 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Luna/Luna-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"/Users/apple/Code/Luna/objectiveflickr-master/Source",
+					"/Users/apple/Code/Luna/objectiveflickr-master/LFWebAPIKIT",
+				);
 				INFOPLIST_FILE = "Luna/Luna-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -392,6 +481,12 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Luna/Luna-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"/Users/apple/Code/Luna/objectiveflickr-master/Source",
+					"/Users/apple/Code/Luna/objectiveflickr-master/LFWebAPIKIT",
+				);
 				INFOPLIST_FILE = "Luna/Luna-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
